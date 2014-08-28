@@ -1,0 +1,39 @@
+noyau du programme : classes et interfaces
+vues correspondantes au noyau du programme
+gestions des évnènements vues/noyau
+mise en place de l'IA (simple)
+while (!good):
+	amélioration de la vue
+	amélioration de l'IA
+
+jouabilité -> différents niveaux de difficulté
+-> cartes multicolores
+-> niveau d'intelligence variable (possibilités d'erreurs/droit à l'oubli)
+
+
+classes intéressantes :
+- Carte
+	-> visible/invisible (pourquoi pas une autre classe pour ça ?)
+	-> possède au minimum une couleur
+	-> ne possède qu'un seul nombre
+- Paquet de Carte
+- Main de Carte (sous-ensemble d'un paquet)
+- Joueur
+	-> main de carte
+	-> informations sur ses cartes
+	-> doit pouvoir accéder à toutes les cartes visibles (cartes jetées + carte des autres joueurs)
+	* jeter une carte
+	* poser une carte (ressemble à jeter une carte mais avec des restrictions)
+	* donner une information (présence ou absence)
+		* couleur 
+		* chiffre
+- IA -> sous-classe de joueur
+- Hanabi
+	-> le nombre de joueur
+	-> le paquet de carte
+	-> les joueurs eux même
+	-> 5/6 emplacements de suites de cartes de même couleur
+	-> le nombre de jetons rouges et bleus
+	-> cartes jetées (un sous ensemble d'un paquet de carte)
+		-> liste spéciale des cartes dangereuses
+	* pas d'action particulière
